@@ -1,8 +1,8 @@
 import React from "react";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Header from "../components/Header";
-import Resume from "../components/Resume";
+import About from "../components/sections/About";
+import Contact from "../components/sections/Contact";
+import Header from "../components/sections/Header";
+import Resume from "../components/sections/Resume";
 
 const HomeView = () => {
   return (

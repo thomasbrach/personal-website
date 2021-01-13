@@ -1,4 +1,4 @@
-import { AppBar, Link, makeStyles, Toolbar } from "@material-ui/core";
+import { AppBar, Button, makeStyles, Toolbar } from "@material-ui/core";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -38,14 +38,14 @@ const NavBar = () => {
       <AppBar className={classes.appbar} color="transparent">
         <Toolbar className={classes.toolbar}>
           {sections.map((section) => (
-            <Link
+            <Button
               key={section.title}
               href={section.url}
-              variant="body1"
+              size="small"
               className={classes.toolbarLink}
             >
               {section.title}
-            </Link>
+            </Button>
           ))}
         </Toolbar>
       </AppBar>

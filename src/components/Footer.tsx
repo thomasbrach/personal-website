@@ -1,5 +1,5 @@
-import { Grid, makeStyles } from "@material-ui/core";
-import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
+import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
+import { LinkedIn, GitHub } from "@material-ui/icons";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,18 +21,24 @@ const Footer = () => {
     >
       <Grid item container justify="center" alignItems="center" spacing={4}>
         <Grid item>
-          <GitHub />
+          <IconButton href="https://github.com/thomasbrach" target="_blank">
+            <GitHub />
+          </IconButton>
         </Grid>
         <Grid item>
-          <LinkedIn />
-        </Grid>
-        <Grid item>
-          <Mail />
+          <IconButton
+            href="https://www.linkedin.com/in/thomasbrach/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </IconButton>
         </Grid>
       </Grid>
       <Grid container direction="column" spacing={2} xl={3}>
-        <Grid item component="h1" style={{ alignSelf: "center" }}>
-          Thomas Brach © {new Date().getFullYear()}
+        <Grid item>
+          <Typography align="center">
+            Thomas Brach © {new Date().getFullYear()}
+          </Typography>
         </Grid>
       </Grid>
     </Grid>

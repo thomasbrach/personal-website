@@ -36,12 +36,12 @@ const Header = () => {
         xl={6}
       >
         <Grid item>
-          <Typography align="center" variant="h1">
+          <Typography align="center" variant="h2">
             Hi, I'm Thomas.
           </Typography>
         </Grid>
         <Grid item>
-          <Typography align="center">
+          <Typography align="center" variant="h5">
             Based in Paris, I am a former Finance guy who decided to learn Web
             Development. I am currently exploring opportunities.
           </Typography>
