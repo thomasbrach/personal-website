@@ -3,20 +3,22 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
+    width: "100%",
     boxShadow: "none",
-    backgroundColor: "#FFFAF9",
+    backgroundColor: "rgba(0,0,0,0.2)",
   },
   toolbar: {
     justifyContent: "center",
-    overflowX: "auto",
   },
   toolbarLink: {
-    padding: theme.spacing(2),
+    margin: theme.spacing(2),
     color: "black",
-    transitionDuration: "0.2s",
-    transitionTimingFunction: "ease-in-out",
-    transitionProperty: "all",
-    transitionDelay: "0s",
+    fontWeight: "bold",
+    fontFamily: "Poppins",
+    // transitionDuration: "0.2s",
+    // transitionTimingFunction: "ease-in-out",
+    // transitionProperty: "all",
+    // transitionDelay: "0s",
   },
 }));
 

@@ -4,7 +4,7 @@ import React from "react";
 const useStyles = makeStyles((theme) => ({
   resume: {
     minHeight: "300px",
-    backgroundColor: "#FEF9F8",
+    backgroundColor: theme.palette.primary.main,
   },
 }));
 
@@ -24,8 +24,7 @@ const Resume = () => {
           Resume
         </Grid>
         <Grid item component="h3" style={{ alignSelf: "center" }}>
-          Based in Paris, I am a former Finance guy who decided to learn Web
-          Development. I am currently exploring opportunities.
+          Blah Blah
         </Grid>
         <Grid item container justify="center" alignItems="center" spacing={2}>
           <Grid item>1</Grid>

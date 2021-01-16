@@ -1,11 +1,29 @@
-import { Button, Snackbar } from "@material-ui/core";
-import SendIcon from "@material-ui/icons/Send";
+import { Button, Icon, makeStyles, Snackbar } from "@material-ui/core";
 import { Form, Formik, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import Alert from "./Alert";
 import FormTextInput from "./FormTextInput";
+
+const useStyles = makeStyles((theme) => ({
+  form: {
+    padding: theme.spacing(2),
+    minWidth: "300px",
+  },
+  button: {
+    border: "solid 1px",
+    borderColor: theme.palette.secondary.dark,
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.dark,
+    "&:hover": {
+      backgroundColor: theme.palette.primary.dark,
+      color: "white",
+      borderColor: "white",
+    },
+    marginTop: theme.spacing(2),
+  },
+}));
 
 type Fields = {
   user_name: string;
@@ -32,6 +50,8 @@ type Toast = {
 };
 
 const ContactForm = () => {
+  const classes = useStyles();
+
   const initialToast = { open: false, severity: undefined, message: "" };
 
   const [toast, setToast] = useState<Toast>(initialToast);
@@ -78,7 +98,7 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         {({ dirty, isValid, isSubmitting, errors }) => (
-          <Form>
+          <Form className={classes.form}>
             <FormTextInput
               name="user_name"
               label="Your Name"
@@ -112,7 +132,8 @@ const ContactForm = () => {
               type="submit"
               fullWidth
               disabled={!dirty || !isValid || isSubmitting}
-              endIcon={<SendIcon />}
+              endIcon={<Icon className="fa fa-paper-plane" />}
+              className={classes.button}
             >
               Send Message
             </Button>

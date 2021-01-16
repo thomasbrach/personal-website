@@ -1,11 +1,24 @@
-import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
-import { LinkedIn, GitHub } from "@material-ui/icons";
+import { Button, Grid, Icon, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import { social } from "../services/data";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    minHeight: "100px",
-    backgroundColor: "#FEF9F8",
+    backgroundColor: theme.palette.primary.dark,
+    padding: theme.spacing(2),
+  },
+
+  iconButton: {
+    color: theme.palette.primary.light,
+    "&:hover": {
+      color: theme.palette.secondary.main,
+    },
+  },
+
+  copyright: {
+    margin: theme.spacing(1),
+    fontFamily: "Poppins",
+    color: theme.palette.primary.light,
   },
 }));
 
@@ -18,25 +31,25 @@ const Footer = () => {
       justify="center"
       alignItems="center"
       className={classes.footer}
+      spacing={4}
     >
       <Grid item container justify="center" alignItems="center" spacing={4}>
-        <Grid item>
-          <IconButton href="https://github.com/thomasbrach" target="_blank">
-            <GitHub />
-          </IconButton>
-        </Grid>
-        <Grid item>
-          <IconButton
-            href="https://www.linkedin.com/in/thomasbrach/"
-            target="_blank"
-          >
-            <LinkedIn />
-          </IconButton>
-        </Grid>
+        {social.map((socialItem) => (
+          <Grid item>
+            <Button
+              href={socialItem.address}
+              target="_blank"
+              className={classes.iconButton}
+              key={social.indexOf(socialItem)}
+            >
+              <Icon className={socialItem.icon} />
+            </Button>
+          </Grid>
+        ))}
       </Grid>
       <Grid container direction="column" spacing={2} xl={3}>
         <Grid item>
-          <Typography align="center">
+          <Typography align="center" className={classes.copyright}>
             Thomas Brach © {new Date().getFullYear()}
           </Typography>
         </Grid>
