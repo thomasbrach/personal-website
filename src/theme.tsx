@@ -14,4 +14,9 @@ export const customTheme = createMuiTheme({
     h1: { fontFamily: "Poppins" },
     h2: { fontFamily: "Poppins" },
   },
+  props: {
+    MuiButtonBase: {
+      disableRipple: true,
+    },
+  },
 });

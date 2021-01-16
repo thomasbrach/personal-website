@@ -10,11 +10,11 @@ const MainLayout = (props: Props) => {
   const { children } = props;
 
   return (
-    <div>
+    <>
       <NavBar />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
