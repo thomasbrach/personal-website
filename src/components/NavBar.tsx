@@ -7,9 +7,11 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     backgroundColor: "rgba(0,0,0,0.2)",
   },
+
   toolbar: {
     justifyContent: "center",
   },
+
   toolbarLink: {
     margin: theme.spacing(2),
     color: "black",

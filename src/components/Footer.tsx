@@ -31,7 +31,6 @@ const Footer = () => {
       justify="center"
       alignItems="center"
       className={classes.footer}
-      spacing={4}
     >
       <Grid item container justify="center" alignItems="center" spacing={4}>
         {social.map((socialItem) => (
