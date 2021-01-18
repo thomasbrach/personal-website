@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
   },
   headline: {
     backgroundColor: "rgba(0,0,0, 0.1)",
-    borderRadius: theme.spacing(2),
+    border: "1px solid",
+    borderColor: theme.palette.primary.dark,
     padding: theme.spacing(2),
   },
   title: {
@@ -33,6 +34,7 @@ const Header = () => {
       id="home"
     >
       <Grid
+        item
         container
         direction="column"
         spacing={2}
