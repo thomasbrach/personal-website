@@ -59,13 +59,12 @@ const Header = () => {
         </Grid>
         <Grid item container justify="center" alignItems="center" spacing={4}>
           {social.map((socialItem) => (
-            <Grid item>
+            <Grid item key={social.indexOf(socialItem)}>
               <Button
                 variant="contained"
                 color="default"
                 href={socialItem.address}
                 target="_blank"
-                key={social.indexOf(socialItem)}
                 aria-label={socialItem.text}
               >
                 <Icon className={socialItem.icon} />

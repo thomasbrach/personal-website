@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   iconButton: {
     color: theme.palette.primary.light,
     "&:hover": {
-      color: theme.palette.secondary.main,
+      color: theme.palette.secondary.dark,
     },
   },
 
@@ -19,6 +19,21 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     fontFamily: "Poppins",
     color: theme.palette.primary.light,
+  },
+
+  linkTop: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.dark,
+    height: "2rem",
+    width: "2rem",
+    borderRadius: "50rem",
+    marginBottom: theme.spacing(2),
+    textAlign: "center",
+    justifyContent: "center",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.dark,
+      color: "white",
+    },
   },
 }));
 
@@ -32,14 +47,19 @@ const Footer = () => {
       alignItems="center"
       className={classes.footer}
     >
+      <a href="#home" className={classes.linkTop}>
+        <i
+          className="fas fa-chevron-up"
+          style={{ width: "100%", height: "25%", verticalAlign: "middle" }}
+        ></i>
+      </a>
       <Grid item container justify="center" alignItems="center" spacing={4}>
         {social.map((socialItem) => (
-          <Grid item>
+          <Grid item key={social.indexOf(socialItem)}>
             <Button
               href={socialItem.address}
               target="_blank"
               className={classes.iconButton}
-              key={social.indexOf(socialItem)}
             >
               <Icon className={socialItem.icon} />
             </Button>
