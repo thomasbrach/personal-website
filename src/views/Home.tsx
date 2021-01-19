@@ -10,8 +10,7 @@ const HomeView = () => {
       <Header />
       <About />
       <Resume />
-      {/* <Skills />
-      <Projects />
+      {/* <Projects />
       <Posts /> */}
       <Contact />
     </>

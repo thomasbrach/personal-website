@@ -105,7 +105,7 @@ const About = () => {
               </span>{" "}
               thanks to my newly acquired skills, or to{" "}
               <span className={classes.highlightSoft}>
-                join a startup with a product I love as a PM
+                join a company with a product I love as a PM
               </span>{" "}
               - should a great opportunity arise!
               <br />
