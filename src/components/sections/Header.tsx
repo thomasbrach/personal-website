@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.dark,
     fontWeight: "bold",
   },
+  subtitle: {
+    [theme.breakpoints.down("md")]: { color: "white" },
+  },
 }));
 
 const Header = () => {
@@ -51,7 +54,7 @@ const Header = () => {
           </Typography>
         </Grid>
         <Grid item>
-          <Typography align="center" variant="h6">
+          <Typography align="center" variant="h6" className={classes.subtitle}>
             Based in Paris, I am a former Finance professional who decided to
             learn Web Development and Product Management. I am currently
             exploring opportunities. Welcome to my website!
