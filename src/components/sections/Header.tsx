@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     backgroundSize: "cover",
     backgroundAttachment: "scroll",
-    background: `url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80) no-repeat top center`,
+    background: `url(header-picture.jfif) no-repeat top center`,
     minHeight: "500px",
     height: "100vh",
   },

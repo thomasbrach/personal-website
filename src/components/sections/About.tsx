@@ -60,11 +60,7 @@ const About = () => {
         lg={8}
       >
         <Grid item>
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C5603AQFN_r0todW_Vw/profile-displayphoto-shrink_400_400/0/1571390747888?e=1616630400&v=beta&t=tde56SEgqSI5qBlI7g4o4B7rLV0AiZv6jNdcBZ5jD-Q"
-            alt="profile"
-            className={classes.profile}
-          />
+          <img src="profile.jpg" alt="profile" className={classes.profile} />
         </Grid>
         <Grid item container alignItems="center" justify="center" spacing={2}>
           <Grid item>
