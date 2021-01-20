@@ -54,10 +54,7 @@ export const skills = [
                 name: "Typescript",
                 icon: "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png"
             },
-            {
-                name: "Redux",
-                icon: "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png"
-            },
+         
             {
                 name: "PostgreSQL",
                 icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
@@ -78,7 +75,11 @@ export const skills = [
             {
                 name: "Firebase",
                 icon: "https://4.bp.blogspot.com/-rtNRVM3aIvI/XJX_U07Z-II/AAAAAAAAJXY/YpdOo490FTgdKOxM4qDG-2-EzcNFAWkKACK4BGAYYCw/s1600/logo%2Bfirebase%2Bicon.png"
-            }
+            },
+            {
+                name: "Redux",
+                icon: "https://redux.js.org/img/redux.svg"
+            },
         ]
     },
     {

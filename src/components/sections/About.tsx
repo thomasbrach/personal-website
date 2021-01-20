@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.dark,
   },
   aboutText: {
-    backgroundColor: "rgba(0,0,0, 0.1)",
-    border: "1px solid",
-    borderColor: theme.palette.primary.dark,
+    // backgroundColor: "rgba(0,0,0, 0.1)",
+    // border: "1px solid",
+    // borderColor: theme.palette.primary.dark,
     padding: theme.spacing(2),
     boxShadow: "",
     marginBottom: theme.spacing(2),

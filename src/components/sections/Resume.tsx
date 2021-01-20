@@ -14,10 +14,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.dark,
   },
   resumeText: {
-    backgroundColor: "rgba(0,0,0, 0.1)",
-    border: "1px solid",
-    borderColor: theme.palette.primary.dark,
-    padding: theme.spacing(2),
+    // backgroundColor: "rgba(0,0,0, 0.1)",
+    // border: "1px solid",
+    // borderColor: theme.palette.primary.dark,
+    // padding: theme.spacing(2),
     boxShadow: "",
   },
   button: {
@@ -51,7 +51,7 @@ const Resume = () => {
       justify="center"
       alignItems="center"
       className={classes.resume}
-      id="about"
+      id="resume"
     >
       <Grid
         item
